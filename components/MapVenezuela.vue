@@ -197,9 +197,9 @@ export default {
         mergeMap((x) => from(x)),
         // delay each element by n milisec
         concatMap(x => { 
-          console.log("concatMap",this.showInitialLoadling)
+          //console.log("concatMap",this.showInitialLoadling)
           let 
-          delayEmit = ((Math.random() * 3) + (Math.random() * 7) ) + 10 ; 
+          delayEmit = ((Math.random() * 3 ) + (Math.random() * 7) ) + 100 ; 
           return of(x).pipe(delay(delayEmit))}
         ),
       )
