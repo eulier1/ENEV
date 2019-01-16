@@ -1,7 +1,6 @@
 <template>
 <div>
 
-
   <h1 v-if="showInitialLoadling" class="initialtitle">VENEZUELA</h1>
 
   <svg v-if="!showInitialLoadling" :class="{'displayMap': !showInitialLoadling }"
@@ -336,8 +335,8 @@ span a {
 .initialtitle::before {
   position:absolute;
   width: 100vw;
-  padding-bottom: 5.5rem;
-  margin-bottom: 5.5rem;
+  padding-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
   background-color: #303030;
 
   content:"";
@@ -347,8 +346,8 @@ span a {
 .initialtitle::after {
   position:absolute;
   width: 100vw;
-  padding-bottom: 5.5rem;
-  margin-top: 5.5rem;
+  padding-bottom: 3.5rem;
+  margin-top: 1.5rem;
   background-color: #303030;
 
   content:"";
@@ -421,7 +420,7 @@ span a {
   }
   to {
     opacity: 0;
-    transform: translateY(-150px);
+    transform: translateY(-70px);
     display: none
   }
 }
@@ -431,13 +430,12 @@ span a {
     opacity: 1;
     transform: translateY(0);
   }
-  30% {
-    transform: translateY(20px);
-    opacity: 0.1;
+  90% {
+    opacity: 1;
   }
   to {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(70px);
     display: none;
   }
 }
@@ -481,7 +479,8 @@ span a {
   .initialtitle:before {
     position:absolute;
     width: 100vw;
-    height: 8rem;
+    padding-bottom: 7rem;
+    margin-bottom: 3rem;
     background-color: #303030;
     content:"";
     animation: slide-up 2.3s ease-in 1.5s forwards;
@@ -490,8 +489,8 @@ span a {
   .initialtitle:after {
     position:absolute;
     width: 100vw;
+    padding-bottom: 7rem;
     margin-top: 3rem;
-    height: 3rem;
     background-color: #303030;
     content:"";
     animation: slide-down-desktop 2.3s ease-in 1.5s forwards;
@@ -500,12 +499,12 @@ span a {
 
 @keyframes translate {
   from {
-    fill-opacity: .7;
+    fill-opacity: .3;
     transform: translate(0px);
   }
   to {
     fill-opacity: 1;
-    transform: translate(2px);
+    transform: translate(3px);
   }
 }
 
