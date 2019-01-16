@@ -1,0 +1,28 @@
+{
+  "name": "ENEV",
+  "version": "1.0.0",
+  "description": "&#34;Etymology venezuelan states name&#39;s (ENEV, Etimologia de los Nombres de los Estados de Venezuela in spanish)&#34;",
+  "author": "Eulier González",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "dev-debug": "node --inspect node_modules/.bin/nuxt"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.3.4",
+    "rxjs": "^6.3.3",
+    "vue-rx": "^6.1.0",
+    "vuetify": "^1.2.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
